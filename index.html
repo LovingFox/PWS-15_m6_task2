@@ -15,7 +15,13 @@
 
     <div class="container">
       <h1>10 квадратов</h1>
-      <h2 id="status-message"><h2>
+      <h2 id="status-message"></h2>
+      <div hidden>
+         <span id="message-init">Первый щелчек - запуск таймера игры.</span>
+         <span id="message-start">Время пошло...</span>
+         <span id="message-end">Игра завершена.</span>
+         <span id="message-round">Щелчков {clicks}, Попаданий {hits}.</span>
+      </div>
 
       <div class="row">
         <div class="col game-field align-text-bottom" id="slot-11"></div>
@@ -68,7 +74,7 @@
 
       <div id="win-message" class="d-none">
         <h2>Вы нашли 10 зелёных квадратов за <span id="total-time-played"></span> секунд</h2>
-        <h2>Счет набранных очков: <span id="score"></span></h2>
+        <h2>Результат: <span id="score"></span></h2>
       </div>
       <div class="row">
         <button id="button-reload" class="btn btn-primary">Играть заново</button>
